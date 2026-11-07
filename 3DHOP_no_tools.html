@@ -46,7 +46,12 @@ function setup3dhop() {
 			"mesh_1" : { url: "models/colum.nxz" }
 		},
 		modelInstances : {
-			"model_1" : { mesh : "mesh_1" }
+			"model_1" : { 
+				mesh : "mesh_1",
+			    transform : {
+					rotation : [0, 0, -90]
+				}
+			}
 		},
 		trackball: { 
 			type : TurnTableTrackball,
